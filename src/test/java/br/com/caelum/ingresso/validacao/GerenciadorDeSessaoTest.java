@@ -71,7 +71,7 @@ public class GerenciadorDeSessaoTest {
 		
 		Sala sala = new Sala("Eldorado - IMAX", BigDecimal.ONE);
 		
-		Filme filme1 = new Filme("Rogue One", Duration.ofMinutes(90), "SCI-FI", BigDecimal.ONE);
+		Filme filme1 = new Filme("Rogue One", Duration.ofMinutes(120), "SCI-FI", BigDecimal.ONE);
 		LocalTime dezHoras = LocalTime.parse("10:00:00");
 		Sessao sessaoDasDez = new Sessao(dezHoras, filme1, sala);
 
@@ -83,7 +83,7 @@ public class GerenciadorDeSessaoTest {
 		
 		GerenciadorDeSessao ger = new GerenciadorDeSessao(sessoes);
 		
-		Filme filme3 = new Filme("Rogue One", Duration.ofMinutes(120), "SCI-FI");
+		Filme filme3 = new Filme("Rogue One", Duration.ofMinutes(120), "SCI-FI", BigDecimal.ONE);
 		//LocalTime dezoitoHoras = LocalTime.parse("18:00:00");
 		Sessao sessao = new Sessao(LocalTime.parse("13:00:00"), filme3, sala);
 
